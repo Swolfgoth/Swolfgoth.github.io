@@ -1,0 +1,107 @@
+#box {
+    border: 2cap solid black
+}
+
+
+.p1 {
+    font-family: "linux Libertine", serif;
+    font-size: 40px;
+    text-align: left;
+    /* line-height:1em */
+}
+
+.p2 {
+    font-family: "linux Libertine", serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.p3 {
+    font-family: "linux Libertine", serif;
+    font-size: 35px;
+    text-align: left;
+}
+
+.p4 {
+    font-family: "linux Libertine", serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.p5 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.p6 {
+    font-family: "linux Libertine", serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.p7 {
+    font-family: "linux Libertine", serif;
+    font-size: 33px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+#card {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+#imagereduction {
+    width: 20%;
+    height: auto;
+}
+
+footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 25%;
+}
+
+div.test {
+    position: relative;
+    animation: Animation 7s ease-in-out 0.5s infinite alternate;
+    animation-name: Animation;
+}
+
+@keyframes Animation {
+    0% {
+        left: 0%;
+        top: 0%;
+    }
+
+    25% {
+        left: 95%;
+        top: 0vh;
+    }
+
+    50% {
+        left: 95%;
+        top: 30vh;
+    }
+
+
+    75% {
+        left: 0%;
+        top: 30vh;
+    }
+
+    100% {
+        left: 0%;
+        top: 0vh;
+    }
+}
+
+a:hover {border-bottom: 1px solid;
+  background: #eeeeff;
+}
