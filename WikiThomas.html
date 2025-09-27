@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>wikithomas</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- ajout feuille CSS -->
+    <link rel="stylesheet" href="wiki.css">
+
+
+<!-- script Java  pour l'aggrandissement de la photo GAMS besoin -->
+    <script>
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- header avec le logo, la barre de recherche et le lien vers le formulaire de contact -->
+    <header>
+        <div class="card-panel">
+            <div class="row valign-wrapper">
+                <div class="col s3">
+                    <img src="wikitom.png" alt="" class="responsive-img" width="150" height="200">
+                </div>
+                <div class="col s7 m6 l6">
+                    <nav class="#eceff1 blue-grey lighten-5 center-align">
+                        <form>
+                            <input type="search" id="Recherche" name="Recherche" placeholder="rechercher sur wikithomas"
+                                required>
+                            <input type="submit" value="Rechercher">
+                        </form>
+                    </nav>
+                </div>
+                <div class="col S3 m2 offset-m2 l2 offset-l2 ">
+                    <div>
+                        <a class="p2" href="contact.html">Me contacter</a>
+                        </div>
+                        <div>
+                        <a class="p2" href="CV 2025 Alternance Full stack.pdf" download> Télécharger le CV physique</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- partie sur le sommaire de gauche avec des balises pour arriver aux bons endroits -->
+    <section>
+        <div class="row ">
+            <div class="col l2 hide-on-med-and-down">
+                <div class="card panel hide-on-med-and-down">
+                    <h4>Sommaire</h4>
+                    <ul>
+                        <li><a class="p3" href="#1" title="" target="">Biographie</a></li><br>
+                        <li><a class="p3" href="#2" title="" target="">Langage et frameworks</a></li><br>
+                        <li><a class="p3" href="#3" title="" target="">Diplômes</a></li><br>
+                        <li><a class="p3" href="#4" title="" target="">Projets</a></li><br>
+                        <li><a class="p3" href="#5" title="" target="">Hobbys</a></li><br>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- partie centrale avec les différentes infos -->
+            <div class="col s12 m12 l10 ">
+                <h3 class="p1">Thomas Plantevin (futur alternant full stack)</h3>
+                <hr>
+                <div class="col s12  m9 l9 ">
+                    <p class="p4"> Thomas Plantevin est un étudiant à <a href="https://www.epitech.eu/">Epitech</a> à
+                        la recherche
+                        d'une alternance en développeur full stack</p>
+                    <a name="1"></a>
+                    <h4>Biographie</h4>
+                    <hr>
+                    <p class="p4">Thomas est né le 7 février 1990 à Saint cloud.</p>
+                    <p class="p4">Après des études réussies (bac mention assez bien), il intègre la prépa <abbr
+                            title="Biologie,Chimie,Physique,Science de la Terre">BCPST</abbr> de Janson de Sailly.
+                        Il décide de poursuivre sur cette voie et rejoint sa région de coeur en intégrant
+                        l'Agrocampus-Ouest à Rennes.
+                        Lors de ses études, il réalisa un stage au canada pour perfectionner son anglais puis un stage à
+                        l'INRA où son goût pour l'informatique le poussa à choisir un stage de développement d'un
+                        programme d'optimisation sous GAMS (voir projet)</p>
+                    <p class="p4">En 2015, il décroche son CDD chez Cargill/Provimi puis un CDI pour le poste de
+                        nutritionniste
+                        formulateur client.</p>
+                    <p class="p4">Curieux, il demande à rejoindre de nombreux projets tel que la mise en place du
+                        rationnement
+                        dynamique ou d'Automax (Application en ligne pour que les clients puissent mettre à jour eux même
+                        les matrices de leurs matières premières) dont il prend le lead (voir projet).</p>
+                    <p class="p4">Après dix ans à explorer son ancien emploi, il choisit de relever un nouveau défi dans
+                        un domaine qu'il toujours essayé de combiner avec son travail : le développement</p>
+                    <p class="p4"> Pour réaliser son projet, il intègre le Pre-MSC de l'Epitech</p>
+                    <a name="2"></a>
+                    <h4>Langage et frameworks</h4>
+                    <hr>
+                    <p class="p4">Suite à son expérience passée et son année Pre-MSC, Thomas a des notions: </p>
+                    <!-- tableau des langages et frameworks-->
+
+                    <table class="striped p4">
+                        <thead>
+                            <tr>
+                                <th>langages</th>
+                                <th>frameworks</th>
+                                <th>niveau</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>python</td>
+                                <td>-</td>
+                                <td>base</td>
+                            </tr>
+                            <tr>
+                                <td>python</td>
+                                <td>turtle</td>
+                                <td>notions</td>
+                            </tr>
+                            <tr>
+                                <td>python</td>
+                                <td>pygame</td>
+                                <td>notions</td>
+                            </tr>
+                            <tr>
+                                <td>html-css</td>
+                                <td>-</td>
+                                <td>base</td>
+                            <tr>
+                                <td>html-css</td>
+                                <td>materialize</td>
+                                <td>base</td>
+                            </tr>
+                            <tr>
+                                <td>GAMS</td>
+                                <td>-</td>
+                                <td>base</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a name="3"></a>
+                    <h4>Diplômes</h4>
+                    <hr>
+                    <p class="p4">Thomas a obtenu les diplômes suivants:</p>
+                    <p class="p4">2008: Bac S Spécialité sciences de la vie et de la Terre :mention assez bien</p>
+                    <p class="p4">2014: <a href="Diplome agro Thomas.pdf">Diplôme d'ingénieur agronome/Master</a> </p>
+                    <a name="4"></a>
+                    <h4>Projets</h4>
+                    <hr>
+                    <h5 class="p7">2014: GAMS.</h5>
+                    <p class="p4">Ce programme avait pour but de pouvoir réaliser une optimisation de l'alimentation de
+                        porc en fonction du prix des matières premières et des données d'ACV.</p>
+                    <p class="p4">Les flux de données sont résumé dans l'image ci dessous :</p>
+                    <img class="materialboxed" src="GamsProgr.png" alt="" width="650">schéma explicatif du programme
+
+                    <p class="p4">L'outil permit la création d'un article scientifique disponible: <a
+                            href="https://www.researchgate.net/publication/282864553_Optimisation_economique_et_environnementale_de_l'atelier_d'engraissement_de_porcs_une_approche_par_modelisation">
+                            ici</a></p>
+                    <br>
+                    <h5 class="p7">2016-2018: Automax.</h5>
+                    <p class="p4">Ce projet consistait en plusieurs taches:</p>
+                    <p class="p4">- Création d"un cahier des charges répondant aux exigences externes et interne,<br>-
+                        Aide au développement (via alpha-testeur/traducteur de fichier de sortie/résolution de problème)
+                        avec <a
+                            href="https://fr.linkedin.com/in/laurent-pollez?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                            Laurent Pollez</a> puis Cap Gemini
+                        <br>- Présentation, gestion des droits et SAV auprès des clients
+
+                        le rendu du programme peut être visible ci dessous: <br>
+                    </p>
+                    <video class="responsive-video" controls>
+                        <source src="Automax.mp4" type="video/mp4">
+                    </video>
+                                        <a name="5"></a>
+                    <h4>Hobbys</h4>
+                    <hr>
+                    <p class="p4">Thomas est modérateur sur la chaîne twitch semi pro de Nunakeau depuis plus de 5 ans, aidant aussi bien pendant les streams que pour la créations d'activité pour des events tel que le <a href="https://zevent.fr/">Zevent</a> 2025, les <a href="https://pattounes-solidaires.com/">Pattounes Solidaires</a> 2024</p>
+                    <p class="p4"> il est également très fan de JDR jouant régulièrement depuis 3 ans (Mutant year zero, alien, D&D) ainsi que de jeux de société</p>
+                    <br>
+                    <br>
+                </div>
+
+                <!-- partie dédiée à la carte de droite -->
+                <div class="col s3 m3 l3">
+                    <div class="card pannel #fafafa grey lighten-5" id="card">
+                        <div class="card-content indigo lighten-5 center-align">
+                            <h5 class="p5">Plantevin Thomas</h5>
+                        </div>
+                        <div class="evolv">
+                        <img src="thomasphoto.JPG" alt="" class="responsive-img">
+                        </div>
+                        <div class="card purple indigo lighten-5">
+                            <h5 class="center-align">fonction</h5>
+                        </div>
+                        <h6 class="p2">Apprenti développeur</h6>
+                        <div class="card purple indigo lighten-5">
+                            <h5 class="center-align">biographie</h5>
+                        </div>
+                        <table class="responsive-table centered">
+                            <tbody>
+                                <tr>
+                                    <th class="p2">naissance</th>
+                                    <td class="p2">07/02/1990</td>
+
+                                </tr>
+                                <tr>
+                                    <th class="p2">nationalité</th>
+                                    <td class="p2">francaise</td>
+                                </tr>
+                                <tr>
+                                    <th class="p2">ancien travail</th>
+                                    <td class="p2">ingénieur agronome</td>
+                                </tr>
+                                <tr>
+                                    <th class="p2">véhiculé</th>
+                                    <td class="p2">oui</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card purple indigo lighten-5">
+                            <h5 class="center-align">altenance recherché</h5>
+                        </div>
+                        <h6 class="p2">
+                            <p>sur Rennes, Nantes ou Angers</p>
+                            <p>alternace full-stack</p>
+                            <p>33 mois (2sem école/6sem entreprise)</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--initialisation de JS pour l'aggrandissement photo Gams   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+<Footer>
+    <address>
+        <details>
+            <summary>
+                Written by <a href="mailto:thomas.plantevin@epitech.eu">Thomas Plantevin</a>.<br>
+            </summary>
+            <p>Merci à Antoine et Jason pour la piscine sur ce module</p>
+        </details>
+    </address>
+    <p>dernière modification le 26/09/2025</p>
+</Footer>
