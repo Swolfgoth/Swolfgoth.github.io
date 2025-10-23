@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- ajout feuille CSS -->
-    <link rel="stylesheet" href="wiki.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -17,62 +17,73 @@
     <!-- header avec le logo -->
     <header>
         <div class="card-panel indigo lighten-5">
-            <img src="wikiemote.png" alt="" class="responsive-img">
-            <h1 class="p6">Formulaire de contact</h1>
-            <div class="row">
-                <div class="col S3 offset-s10">
-                    <a href="index.html">Retour</a>
+            <div class="row valign-wrapper">
+
+                <div class="col s2 left-align">
+                    <img src="image/wikiemote.png" alt="logo wikithomas" class="responsive-img"
+                        style="max-width: 100px;">
+                </div>
+
+                <div class="col s8 center-align">
+                    <h1 class="p9">Formulaire de contact</h1>
+                </div>
+
+                <div class="col s2 right-align">
+                    <a href="index.html" class="btn indigo lighten-2 white-text">Retour</a>
                 </div>
             </div>
-    </header>
-</body>
-<div class="row">
-    <form class="col s12">
-        <div class="row">
-            <div class="input-field col s6">
-                <input placeholder="Prenom" id="first_name" type="text" class="validate">
-            </div>
-            <div class="input-field col s6">
-                <input placeholder="Nom" id="last_name" type="text" class="validate">
-            </div>
         </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input placeholder="Email" id="email" type="email" class="validate">
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s6">
-                <input placeholder="Numero de telephone" id="tel" type="tel" class="validate">
 
+    </header>
+
+    <div class="row">
+        <form action="mailto:thomas.plantevin@epitech.eu" method="post" enctype="text/plain" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Prenom" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Nom" id="last_name" type="text" class="validate">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <textarea placeholder="Ecrivez votre message ici" id="textarea1"
-                    class="materialize-textarea"></textarea>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Email" id="email" type="email" class="validate">
+                </div>
             </div>
-        </div>
-        <a href="mailto:thomas.plantevin@epitech.eu"><button class="btn waves-effect waves-ligh purple lighten-5"
-                type="submit" name="action">cliquez pour envoyer</a>
-        </button>
-    </form>
-</div>
-<div class="raw">
-    <div class="col l12 hide-on-med-and-down">
-        <div class="test"> <img src="wikiemote.png" alt="" class="responsive-img"></div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Numero de telephone" id="tel" type="tel" class="validate">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea placeholder="Ecrivez votre message ici" id="textarea1"
+                        class="materialize-textarea"></textarea>
+                </div>
+            </div>
+            <button class="btn indigo" type="submit">
+                Envoyer le message
+            </button>
+        </form>
     </div>
-</div>
-<br>
-<br>
-<Footer>
-    <address>
-        <details>
-            <summary>
-                Written by <a href="mailto:thomas.plantevin@epitech.eu">Thomas Plantevin</a>.<br>
-            </summary>
-            <p>Merci d'avoir visiter la page de contact</p>
-        </details>
-    </address>
-    <p>dernière modification le 26/09/2025</p>
-</Footer>
+    <div class="animation-container">
+        <div class="test">
+            <img src="image/wikiemote.png" alt="animation" class="responsive-img" width="100">
+        </div>
+    </div>
+    <br>
+    <br>
+    <Footer>
+        <address>
+            <details>
+                <summary>
+                    Written by <a href="mailto:thomas.plantevin@epitech.eu">Thomas Plantevin</a>.<br>
+                </summary>
+                <p>Merci d'avoir visité la page de contact</p>
+            </details>
+        </address>
+        <p>dernière modification le 22/10/2025</p>
+    </Footer>
+</body>

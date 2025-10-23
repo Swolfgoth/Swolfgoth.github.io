@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>wikithomas</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- ajout feuille CSS -->
+    <link rel="stylesheet" href="../css/projet_job_board.css">
+    <!-- script Java  pour l'aggrandissement de la photo GAMS besoin -->
+    <script>
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- header avec le logo, la barre de recherche et le lien vers le formulaire de contact -->
+    <header>
+        <div class="card-panel">
+            <div class="row valign-wrapper">
+                <div class="col s3 m3 l3">
+                    <div class="header-logo-container">
+                        <a data-target="slide-out" class="sidenav-trigger menu-btn">☰</a>
+                        <img src="../image/wikitom.png" alt="logo wikithomas" class="responsive-img" width="150"
+                            height="200">
+                    </div>
+                    <ul id="slide-out" class="sidenav">
+                      <li><a href="../index.html" class="p3"> Page d'accueil</a></li>
+                        <li><a href="../projet/projet_Gams.html" class="p3"> Projet Aliment écologique</a></li>
+                        <li><a href="../projet/projet_automax.html" class="p3"> Projet Automax</a></li>
+                        <li><a href="../projet/projet_hangman.html" class="p3"> Projet Jeu du pendu</a></li>
+                        <li><a href="../projet/projet_job_board.html" class="p3"> Projet Job board</a></li>
+                        <li><a href="../projet/Hobby.html" class="p3">Hobbys</a></li>
+                        <li><a href="../contact.html" class="p3"> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col s6 m6 l6">
+                    <form>
+                        <select id="page-select" class="browser-default">
+                            <option value=""> Rechercher sur wikithomas </option>
+                            <option value="../index.html">Accueil</option>
+                            <option value="../projet/projet_Gams.html">Projet Aliment porc écologique</option>
+                            <option value="../projet/projet_automax.html">Projet Automax</option>
+                            <option value="../projet/projet_hangman.html">Projet Jeu du pendu</option>
+                            <option value="../projet/projet_job_board.html">Projet Job board</option>
+                            <option value="../projet/Hobby.html">Hobbys</option>
+                            <option value="../contact.html">Contact</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col S3 m3 l3 ">
+                    <div>
+                        <a class="p2" href="../contact.html">Me contacter</a>
+                    </div>
+                    <div>
+                        <a class="p2" href="../image/CV 2025 Alternance Full stack.pdf" download> Télécharger le CV
+                            physique</a>
+                    </div>
+                    <div>
+                        <a class="p2" href="https://www.linkedin.com/in/thomas-plantevin-9a47ba175">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="p2">git commit -m "refactor(thomas): change class formulator -> developer"</p>
+            </div>
+        </div>
+    </header>
+    <!-- partie sur le sommaire de gauche avec des balises pour arriver aux bons endroits -->
+    <section>
+        <div class="row">
+            <!-- SOMMAIRE -->
+            <div class="col l2 hide-on-med-and-down">
+                <div class="sommaire">
+                    <h4>Sommaire</h4>
+                    <ul>
+                        <li><a class="p4" href="#1">Description du projet</a></li>
+                        <li><a class="p4" href="#2">Aperçu du projet</a></li>
+                        <li><a class="p4" href="#3">Travail effectué</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col l7 s7 m9">
+                <h3 class="p1">Job Board</h3>
+                <hr>
+                <p class="p4">
+                    Le but de ce projet était de simuler un site de recherche d'emploi.
+                </p>
+
+                <a name="1"></a>
+                <h4 class="p6">Description du projet</h4>
+                <hr>
+                <p class="p4"> Il s'agit d'un projet scolaire, effectué en 2 semaines. le but était de créer une
+                    application avec une database, une page web pour le front et une API (découverte des concepts:
+                    Modèle-vue-contrôleur, gestion d'une API...).
+                </p>
+                <p class="p4">
+                    Le groupe a choisi de travailler avec Node.js (frameworks:express) pour la gestion du back en lien
+                    avec PostgreSQL pour la database. le front étant assez basique, il a été choisi de rester sur du
+                    HTML/CSS sans frameworks.
+
+                </p>
+
+                <a name="2"></a>
+                <h4 class="p6">Aperçu du projet</h4>
+                <hr>
+                <div class="row">
+                    <div class="col l9 s8 m8">
+                        <br>
+                        <p class="p4">Quand on se connecte, on arrive sur une page de login (puis vers un un system
+                            d'insciption
+                            si la personne n'a pas de compte).</p>
+                    </div>
+                    <div class="col l3 s2 m2">
+                        <img class="materialboxed" src="../image/Job_board.png" alt="schéma explicatif du programme"
+                            width="250">
+                    </div>
+                </div>
+                <p class="p4"> Une fois logué, l'utilisateur voit l'ensemble des offres disponibles (créé à
+                    partir d'un
+                    template) pouvant découvrir les détails de l'offre ou postuler (via des modales)
+                    les informations de l’utilisateur sont préremplies lorsqu’il postule et il peut à tout
+                    moment
+                    changer ses informations si besoin. </p>
+
+
+                <div class="image">
+                    <img class="materialboxed responsive-img" src="../image/Job_board2.png" width="700">
+                </div>
+                <p class="p4">les compagnies ont une vue différente où elles peuvent voir les messages des personnes
+                    ayant
+                    postulé.</p>
+                <p class="p4"> L'administrateur a lui aussi une vue dédiée où il peut réaliser un CRUD complet de toutes
+                    les tables.</p>
+                <div class="image">
+                    <img class="materialboxed responsive-img" src="../image/Job_board3.png" width="700">
+                </div>
+
+
+                <a name="3"></a>
+                <h4 class="p6">Travail effectué</h4>
+                <hr>
+                <p class="p4">
+                    Dans ce projet, Thomas a réalisé plusieurs étapes :
+                    <br>- Organisation de la base de donnée,
+                    <br>- création de la page applicant (html,css,js) ainsi que des routes/controllers/method associés.
+                    <br>- redaction du Readme.md
+                    <br>- présentation du poduit fini.
+
+                </p>
+            </div>
+            <!-- carte à droite -->
+            <div class="col l3 s6 m3">
+                <div class="card pannel #fafafa grey lighten-5" id="card">
+                    <div class="card-content indigo lighten-5 center-align">
+                        <h5 class="p5">Job_board</h5>
+                    </div>
+                    <div class="evolv">
+                        <img src="../image/Job_board.png"  class="responsive-img">
+                    </div>
+                    <div class="card purple indigo lighten-5">
+                        <h5 class="p8 center-align">Type de projet</h5>
+                    </div>
+                    <h6 class="p2 center-align">Developpeur full-stack</h6>
+
+                    <div class="card purple indigo lighten-5">
+                        <h5 class="p8 center-align">Soft Skills</h5>
+                    </div>
+                    <h6 class="p2 center-align">Gestion de projet<br><br>Capacité d'apprentissage rapide<br><br>Gestion du temps<br><br>tavail en équipe</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--initialisation de JS pour l'aggrandissement photo Gams   -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../navigation.js"></script>
+
+    <footer>
+        <address>
+            <details>
+                <summary>
+                    Written by <a href="mailto:thomas.plantevin@epitech.eu">Thomas Plantevin</a>.<br>
+                </summary>
+                <p>ce site a été développé sans café mais avec bcp de coca</p>
+            </details>
+        </address>
+        <p>dernière modification le 16/10/2025</p>
+    </footer>
+</body>

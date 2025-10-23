@@ -1,0 +1,39 @@
+.
+├── contact.html
+├── css
+│   ├── Hobby.css
+│   ├── index.css
+│   ├── projet_automax.css
+│   └── projet_Gams.css
+├── image
+│   ├── alien_image.jpg
+│   ├── Automax.png
+│   ├── Automax_V1.mp4
+│   ├── CV 2025 Alternance Full stack.pdf
+│   ├── D&D_image.jpg
+│   ├── Diplome agro Thomas.pdf
+│   ├── escape_image.jpg
+│   ├── GAMS_Image.png
+│   ├── GamsProgr.png
+│   ├── Job_board.png
+│   ├── Mutant_image.jpg
+│   ├── Naheulbeuk_image.jpg
+│   ├── Screenshot from 2025-10-15 16-25-42.png
+│   ├── thomasphoto.JPG
+│   ├── wikiemote.png
+│   ├── Wikipedia_1.png
+│   ├── Wikipedia_2.png
+│   ├── wikipedia_3.png
+│   ├── wikithomas cor.png
+│   ├── wikithomas.png
+│   ├── wikitom.png
+│   └── Zevent.mp4
+├── index.html
+├── navigation.js
+├── projet
+│   ├── Hobby.html
+│   ├── projet_automax.html
+│   └── projet_Gams.html
+└── structure.txt
+
+4 directories, 33 files
