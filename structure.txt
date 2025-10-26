@@ -4,7 +4,9 @@
 │   ├── Hobby.css
 │   ├── index.css
 │   ├── projet_automax.css
-│   └── projet_Gams.css
+│   ├── projet_Gams.css
+│   ├── projet_hangman.css
+│   └── projet_job_board.css
 ├── image
 │   ├── alien_image.jpg
 │   ├── Automax.png
@@ -15,10 +17,13 @@
 │   ├── escape_image.jpg
 │   ├── GAMS_Image.png
 │   ├── GamsProgr.png
+│   ├── hangman2.png
+│   ├── hangman.png
+│   ├── Job_board2.png
+│   ├── Job_board3.png
 │   ├── Job_board.png
 │   ├── Mutant_image.jpg
 │   ├── Naheulbeuk_image.jpg
-│   ├── Screenshot from 2025-10-15 16-25-42.png
 │   ├── thomasphoto.JPG
 │   ├── wikiemote.png
 │   ├── Wikipedia_1.png
@@ -29,11 +34,16 @@
 │   ├── wikitom.png
 │   └── Zevent.mp4
 ├── index.html
+├── navigation_contact.js
 ├── navigation.js
 ├── projet
 │   ├── Hobby.html
 │   ├── projet_automax.html
-│   └── projet_Gams.html
+│   ├── projet_Gams.html
+│   ├── projet_hangman.html
+│   └── projet_job_board.html
+├── ReadMe.md
+├── structure.exe
 └── structure.txt
 
-4 directories, 33 files
+4 directories, 43 files
