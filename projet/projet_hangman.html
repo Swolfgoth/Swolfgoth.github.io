@@ -9,6 +9,12 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- ajout feuille CSS -->
     <link rel="stylesheet" href="../css/projet_hangman.css">
+        <script>
+        const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+    </script>
     <!-- script Java  pour l'aggrandissement de la photo GAMS besoin -->
     <script>
         $(document).ready(function () {
@@ -100,7 +106,7 @@
                 <h3 class="p1">le jeu du pendu</h3>
                 <hr>
                 <p class="p4">
-                    Après 8 jours de découverte de Python, le but était de coder un jeu du pendu et d'y rajouter des
+                    Après 8 jours de découverte de Python, le but était de coder un jeu du pendu et d'y ajouter des
                     fonctionnalités au choix.
                 </p>
 
@@ -109,8 +115,8 @@
                 <hr>
                 <p class="p4">Exercice final de la prépiscine, le programme demandait de reprendre l'ensemble des bases
                     vu pendant la semaine.
-                    le jeu devait à minima prendre des mots dans un fichier externe puis lancer le jeu.
-                    Le jeu contient en plus un système de sauvegarde ainsi que 3 niveaux de difficulté.
+                    Le jeu devait à minima prendre des mots dans un fichier externe puis lancer le jeu.
+                    Le jeu comporte également un système de sauvegarde et trois niveaux de difficulté.
                 </p>
 
 
@@ -123,13 +129,13 @@
                         <p class="p4"> Une fois lancé, le jeu demande à l'utilisateur son niveau de difficulté choisi.
                             Plus le niveau est élevé, moins l'utilisateur a de chance pour réussir.
                             Ensuite le jeu affiche le nombre de lettre d'un mot pris aléatoirement dans le fichier
-                            mot_clé.txt. En cas d'erreur, le nombre de guess diminue de 1 si une seule lettre avait été
-                            proposée. Si c'etait un mot qui était proposé, le joueur perd 5 points d'un coup.
-                            le jeu s'arrête soit quand le joueur a épuisé toutes ses propositions ou s'il a réussi à
+                            mot_clé.txt. En cas d'erreur, le nombre d'essais diminue de 1 si une seule lettre avait été
+                            proposée. Si c'était un mot qui était proposé, le joueur perd 5 points d'un coup.
+                            Le jeu s'arrête soit quand le joueur a épuisé toutes ses propositions ou s'il a réussi à
                             trouver le mot.
                             En cas de victoire, le jeu vérifie si le mot avait déjà été trouvé. Si le mot n'avait pas
-                            été trouvé ou si le mot a été trouvé en moins de proposition, le jeu propose de rentrer son
-                            nom pour enregistrer les highscore
+                            encore été trouvé ou s'il a été trouvé en moins d'essais, le jeu propose de rentrer son
+                            nom pour enregistrer les highscores.
                     </div>
                     <div class="col l3 s3 m3">
                         <br>
@@ -143,8 +149,8 @@
                 <hr>
                 <p class="p4">
                     Ce projet comportait plusieurs étapes :
-                    <br>- Réalisation du jeu principal
-                    <br>- Ajout des fonctionnalités highscore et difficulté
+                    <br>- Développement du jeu principal
+                    <br>- Ajout des fonctionnalités de gestion des scores (highscores) et de choix de la difficulté
                 </p>
             </div>
             <!-- carte à droite -->

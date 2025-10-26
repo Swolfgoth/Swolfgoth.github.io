@@ -9,6 +9,12 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- ajout feuille CSS -->
     <link rel="stylesheet" href="css/index.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+    </script>
 </head>
 
 <body>
@@ -86,7 +92,8 @@
                         <li><a class="p4" href="#1">Biographie</a></li>
                         <li><a class="p4" href="#2">Langages et frameworks</a></li>
                         <li><a class="p4" href="#3">Derniers projets</a></li>
-                        <li><a class="p4" href="#4">Diplômes</a></li>
+                        <li><a class="p4" href="#4">Soft-Skills</a></li>
+                        <li><a class="p4" href="#5">Diplômes</a></li>
 
                     </ul>
                 </div>
@@ -97,7 +104,7 @@
                 <hr>
                 <p class="p4">
                     Thomas Plantevin est un étudiant à <a href="https://www.epitech.eu/">Epitech</a> à la recherche
-                    d'une alternance en développement full stack.
+                    d'une alternance en développement full stack ou IA.
                 </p>
 
                 <a name="1"></a>
@@ -109,17 +116,18 @@
                     <abbr title="Biologie, Chimie, Physique, Science de la Terre">BCPST</abbr> de Janson de Sailly.
                     Il décide de poursuivre sur cette voie et rejoint sa région de cœur en intégrant
                     l'Agrocampus-Ouest à Rennes.
-                    Lors de ses études, il réalisa un stage au Canada pour perfectionner son anglais puis un stage à
+                    Lors de ses études, il réalisa un stage au Canada pour perfectionner son anglais, puis un stage à
                     l'INRA où son goût pour l'informatique le poussa à développer un programme d'optimisation sous GAMS
                     (voir projet).
                 </p>
                 <p class="p4">
-                    En 2015, il décroche son CDD chez Cargill/Provimi puis un CDI en tant que nutritionniste formulateur
+                    En 2015, il décroche son CDD chez Cargill/Provimi puis un CDI en tant que nutritionniste-formulateur
                     client.
                 </p>
                 <p class="p4">
                     Curieux, il rejoint de nombreux projets tels que la mise en place du rationnement dynamique ou
-                    d'Automax (application en ligne permettant aux clients de mettre à jour eux-mêmes leurs matrices de
+                    de l'application Automax (application en ligne permettant aux clients de mettre à jour eux-mêmes
+                    leurs matrices de
                     matières premières)
                     dont il prend le lead (voir projet).
                 </p>
@@ -210,8 +218,9 @@
                                     <hr>
                                     <p class="card-language p4">GAMS</p>
                                     <hr>
-                                    <p class="p4">Ce programme a pour but d'optimiser l'alimentation des porcs selon
-                                        le prix des matières premières et les données d'analyse du cycle de vie (ACV)
+                                    <p class="p4">Ce programme a pour but d'optimiser l'alimentation des porcs en
+                                        fonction du prix des matières premières et des données issues de l'analyse du
+                                        cycle de vie (ACV).
                                     </p>
                                 </div>
                                 <div class="card-project-footer">
@@ -231,7 +240,8 @@
                                     <p class="card-language p4">Redaction CDC/
                                         Gestion de projet</p>
                                     <hr>
-                                    <p class="p4">Ce projet avait pour but de fournir aux clients de Provimi la capacité
+                                    <p class="p4">Ce projet avait pour but de fournir aux clients de Provimi la
+                                        possibilité
                                         de modifier les matrices de leurs matières premières </p>
                                 </div>
                                 <div class="card-project-footer">
@@ -251,8 +261,9 @@
                                     <p class="card-language p4">HTML/Node.js/SQL</p>
                                     <hr>
                                     <p class="p4"> Le but de ce projet était de simuler un site de recherche d'emploi.
-                                        Apres authentification, le postulant peut voir les offres pésentent dans la base
-                                        de données SQL et y postuler. le site dispose également d'un ole admin afin de
+                                        Après authentification, le postulant peut voir les offres présentes dans la base
+                                        de données SQL et y postuler. le site dispose également d'un rôle administrateur
+                                        afin de
                                         gérer les offres.
                                     </p>
                                 </div>
@@ -265,6 +276,68 @@
                     </div>
                 </div>
                 <a name="4"></a>
+                <h4 class="p6">Soft-Skills</h4>
+                <hr>
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th>Soft Skill</th>
+                            <th>Projets/Expériences associés</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Organisation & gestion de projet</td>
+                            <td><a href="projet/Projet_job_board.html">Job board</a>, <a href="projet/projet_automax.html">Automax</a>, Diplôme d'ingénieur
+                                agronome, <a href="projet/Hobby.html">Organisation d'événements Twitch</a>, Formulateur</td>
+                        </tr>
+                        <tr>
+                            <td>Apprentissage rapide</td>
+                            <td><a href="projet/Projet_job_board.html">Job board</a>, <a href="projet/projet_hangman.html">Jeu du pendu</a>, Diplôme d'ingénieur
+                                agronome</td>
+                        </tr>
+                        <tr>
+                            <td>Gestion du temps</td>
+                            <td><a href="projet/Projet_job_board.html">Job board</a>, <a href="projet/Hobby.html">Modération Twitch</a>, Diplôme
+                                d'ingénieur agronome, Formulateur</td>
+                        </tr>
+                        <tr>
+                            <td>Travail en équipe</td>
+                            <td><a href="projet/Projet_job_board.html">Job board</a>, <a href="projet/Hobby.html">JDR, Escape Game, Organisation
+                                d'événements Twitch</a>, Diplôme d'ingénieur agronome, Formulateur</td>
+                        </tr>
+                        <tr>
+                            <td>Adaptabilité</td>
+                            <td><a href="projet/projet_automax.html">Automax</a>, <a href="projet/Hobby.html">Modération Twitch</a>, Diplôme d'ingénieur agronome, Formulateur</td>
+                        </tr>
+                        <tr>
+                            <td>Communication</td>
+                            <td><a href="projet/projet_automax.html">Automax</a>, <a href="projet/projet_Gams.html">Aliment porc écologique </a>, <a href="projet/Hobby.html">Modération Twitch</a>, Formulateur</td>
+                        </tr>
+                        <tr>
+                            <td>Pensée analytique</td>
+                            <td><a href="projet/projet_Gams.html">Aliment porc écologique </a>, Diplôme d'ingénieur agronome, <a href="projet/Hobby.html">JDR, Escape Game</a>, Formulateur</td>
+                        </tr>
+                        <tr>
+                            <td>Autonomie</td>
+                            <td><a href="projet/projet_Gams.html">Aliment porc écologique </a>, Diplôme d'ingénieur agronome, Formulateur</td>
+                        </tr>
+                        <tr>
+                            <td>Curiosité</td>
+                            <td><a href="projet/projet_hangman.html">Jeu du pendu</a>, <a href="projet/Hobby.html">JDR, Escape Game</a>, Diplôme d'ingénieur agronome</td>
+                        </tr>
+                        <tr>
+                            <td>Créativité & stratégie</td>
+                            <td><a href="projet/Hobby.html">JDR, Escape Game, Conception d'activités Twitch</a>, Formulateur</td>
+                        </tr>
+                        <tr>
+                            <td>Rigueur scientifique</td>
+                            <td>Diplôme d'ingénieur agronome, Formulateur</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a name="5"></a>
                 <h4 class="p6">Diplômes</h4>
                 <hr>
                 <p class="p4">Thomas a obtenu les diplômes suivants :</p>
@@ -336,16 +409,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="navigation.js"></script>
 
-<footer>
-    <address>
-        <details>
-            <summary>
-                Written by <a href="mailto:thomas.plantevin@epitech.eu">Thomas Plantevin</a>.<br>
-            </summary>
-            <p>ce site a été développé sans café mais avec bcp de coca</p>
-        </details>
-    </address>
-    <p>dernière modification le 16/10/2025</p>
-</footer>
+    <footer>
+        <address>
+            <details>
+                <summary>
+                    Written by <a href="mailto:thomas.plantevin@epitech.eu">Thomas Plantevin</a>.<br>
+                </summary>
+                <p>Ce site a été développé sans café mais avec beaucoup de coca</p>
+            </details>
+        </address>
+        <p>dernière modification le 16/10/2025</p>
+    </footer>
 
 </body>

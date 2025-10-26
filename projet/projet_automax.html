@@ -9,6 +9,12 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- ajout feuille CSS -->
     <link rel="stylesheet" href="../css/projet_automax.css">
+        <script>
+        const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+    </script>
 </head>
 
 <body>
@@ -94,42 +100,42 @@
                 <h3 class="p1">Automax</h3>
                 <hr>
                 <p class="p4">
-                    Ce projet avait pour but de fournir aux clients de Provimi la capacité de modifier les matrices de
+                    Ce projet avait pour but de fournir aux clients de Provimi la possibilité de modifier les matrices de
                     leurs matières premières
                 </p>
 
                 <a name="1"></a>
                 <h4 class="p6">Description du projet</h4>
                 <hr>
-                <p class="p4">Après reception de leurs matières premières, les fabriquants d'aliment réalisent des
+                <p class="p4">Après réception de leurs matières premières, les fabricants d'aliments réalisent des
                     analyses en laboratoire. Cependant, par souci de gain de temps, de moyens et d'argent, seuls
                     quelques critères
                     sont analysés (principalement protéine, cellulose, amidon, humidité).
-                    Cela n'est malheureusement pas suffisant pour l'alimentation de précision que nécéssite les élevages
+                    Cela n'est malheureusement pas suffisant pour l'alimentation de précision que nécessite les élevages
                     (par exemple, les aliments sont conçus en travaillant sur le profil en acides aminées digestibles)
                     C'est le rôle des firmes services et instituts de recherche de fournir alors les informations
-                    manquantes via des équations
+                    manquantes via des équations.
                 </p>
                 <p class="p4">
-                    La naissance de l'application vient du fait que certains clients voulaient pouvoir mettre à jour
-                    leurs données (appelé matrices) sans avoir à passer par les formulateurs de Provimi (pour un gain de
+                    L’application est née du besoin de certains clients de pouvoir mettre à jour
+                    leurs données (appelées matrices) sans avoir à passer par les formulateurs de Provimi (pour un gain de
                     temps et d'indépendance)
-                    Provimi a alors créé un groupe de projet composé d'un formulateur (Thomas) et d'un developpeur <a
-                        href="https://fr.linkedin.com/in/laurent-pollez">Laurent Pollez</a> puis Cap Gemini.
-                    Apres 2 ans de developpement et test, le projet fut présenté lors d'un forum Formulation et
+                    Provimi a alors créé un groupe de projet composé d'un formulateur (Thomas) et d'un développeur <a
+                        href="https://fr.linkedin.com/in/laurent-pollez">Laurent Pollez</a> puis Cap Gemini qui a rejoint le projet.
+                    Après 2 ans de developpement et de tests, le projet fut présenté lors d'un forum Formulation et
                     rencontra
-                    un grand succes.
+                    un grand succès.
                 </p>
 
                 <a name="2"></a>
                 <h4 class="p6">Aperçu du projet</h4>
                 <hr>
 
-                <p class="p4">l'application était hébergée sur l'extranet de Provimi.
-                    Apres connexion, le client pouvait faire un CRUD complet des données analytiques puis exporter
+                <p class="p4">L'application était hébergée sur l'extranet de Provimi.
+                    Après connexion, le client pouvait faire un CRUD complet des données analytiques puis exporter
                     l'intégralité des nutriments sous format intégrable dans leur logiciel de Formulation
-                    Un systeme de contôle des valeurs d'entrée a été mis en place. Les fichiers de valorisations
-                    contenant les équations étaient facilement modifiable par les formulateurs de Provimi.
+                    Un système de contôle des valeurs d'entrée a été mis en place. Les fichiers de valorisations
+                    contenant les équations étaient facilement modifiables par les formulateurs de Provimi.
                 <div class="video">
                     <video class="responsive-video" controls>
                         <source src="../image/Automax_V1.mp4" type="video/mp4">
@@ -141,7 +147,7 @@
                 <p class="p4">
                     Ce projet comportait plusieurs étapes :
                     <br>- Rédaction du cahier des charges répondant aux exigences internes et externes.
-                    <br>- Aide au développement (tests, traduction de fichiers, résolution de problèmes) en
+                    <br>- Participation au développement (tests, traduction de fichiers, résolution de problèmes) en
                     collaboration avec le développeur.
                     <br>- Présentation, gestion des droits et support client.
                 </p>
