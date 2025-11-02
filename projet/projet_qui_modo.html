@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/projet_automax.css">
-        <script>
+    <!-- ajout feuille CSS -->
+    <link rel="stylesheet" href="../css/projet_qui_modo.css">
+    <script>
         const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.documentElement.classList.add('dark-mode');
-    }
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
     </script>
-       <!-- script Java  pour l'aggrandissement de la photo GAMS besoin -->
+    <!-- script Java pour l'aggrandissement des images -->
     <script>
         $(document).ready(function () {
             $('.materialboxed').materialbox();
         });
     </script>
+
 </head>
 
 <body>
@@ -73,7 +75,7 @@
                     <div>
                         <a class="p2" href="https://www.linkedin.com/in/thomas-plantevin-9a47ba175">LinkedIn</a>
                     </div>
-                                        <div class="theme-toggle center-align">
+                    <div class="theme-toggle center-align">
                         <label>
                             <input name="theme" type="radio" value="light" checked>
                             <span> Mode clair</span>
@@ -86,7 +88,7 @@
                 </div>
             </div>
             <div>
-                <p class="p2">git commit -m "refactor(thomas): change class formulator -> developer"</p>
+                <p class="p2">git commit -m "feat(thomas): ajout page projet Qui a dit ça ? avec chat Twitch"</p>
             </div>
         </div>
     </header>
@@ -106,102 +108,94 @@
             </div>
 
             <div class="col l7 s7 m9">
-                <h3 class="p1">Aliment porc écologique </h3>
+                <h3 class="p1">Qui a raconté cela ? — Jeu Twitch </h3>
                 <hr>
                 <p class="p4">
-                    Ce projet avait pour but d'optimiser une <abbr
-                        title="Ensemble des aliments au long de la vie de l'animal">séquence alimentaire</abbr> en
-                    fonction du prix des matières premières et de l'environnement.
+                    “Qui a dit/vécu cela ?” est un mini-jeu web interactif réalisé pour le subathon de la streameuse
+                    Nunakeau. Le but du jeu : deviner quel
+                    modérateur a raconté chaque anecdote tout en permettant au chat Twitch de voter en direct.
                 </p>
 
                 <a name="1"></a>
                 <h4 class="p6">Description du projet</h4>
                 <hr>
-                <p class="p4">Même si aujourd'hui, l'écologie est de plus en plus au centre des préoccupations des
-                    fabricants d'aliment du bétail. En 2014, l'INRA est précurseur dans ce domaine avec sa propre table
-                    d'analyse de cycle de vie: EcoAlim et tente de réfléchir aux méthodes pour améliorer l'impact de nos
-                    aliments porcins.
-
+                <p class="p4">
+                    Le jeu affiche une anecdote parmi une liste d'experience vécue par un modérateur. La streameuse
+                    clique sur les
+                    avatars des modérateurs pour indiquer sa réponse ou ses réponses. le logiciel
+                    montre visuellement la solution une fois les réponses validées. Un score de connaissance des modos
+                    est alors mesuré.
                 </p>
                 <p class="p4">
-                    C'est dans ce contexte qu'a été créé ce programme lors d'un stage de 6 mois à l'INRA de
-                    Saint-Gilles. Le but était de créer un programme sous GAMS (General Algebraic Modeling System)
-                    reprenant les données de croissance
-                    d'InraPorc, les données d'ACV de EcoAlim qui optimiserait la séquence alimentaire selon des listes
-                    de prix différentes et avec des objectifs de ratio économie/environnement différents. </p>
+                    Le chat Twitch peut voter en temps réel en tapant le pseudo du modérateur. Les votes sont d'abord
+                    invisibles pendant que la streameuse réfléchit, puis affichés et figés après validation.
+                    Le score final est calculé en pourcentage de bonnes réponses.
+                </p>
 
                 <a name="2"></a>
                 <h4 class="p6">Aperçu du projet</h4>
                 <hr>
-                <p class="p4"> le programme est composé de 3 parties:<br>
-                    - un pseudo logiciel de formulation qui permet de prendre en compte les besoins de l'animal, la
-                    liste et la disponibilité des matières premières. Mais celui ci travaille l'ensemble de la séquence
-                    et non un aliment contrairement au logiciel de formulation classique.<br>
-                    - un calcul du coût économique assez détaillé prenant en compte les caractéristiques de la viande
-                    (taux de muscles de pièces par exemple).<br>
-                    - un calcul complet de l'impact des aliments gérant notamment les impacts du lisier en plus de celui
-                    des matières premières.<br>
-                    Le tout est optimisé via une fonction objectif dont les coefficients pouvaient être ajustés.
-
-                    Le modèle effectuait les étapes suivantes:
-                    - Recherche la formule alimentaire optimale (composition en matières premières).
-                    - Détermine la séquence d'alimentation optimale (nombre et durée des phases).
-                    - Évalue la marge brute de production porcine.
-                    - Calcule les émissions environnementales (GES, NH₃, N₂O, CH₄, PO₄, etc.).
-                    - optimisation des contraintes nutritionnelles, économiques et environnementales.
-
+                <p class="p4">
+                    Le projet fonctionne entièrement dans le navigateur, sans backend. Il suffit d'ouvrir
+                    index.html pour jouer (si modification) ou d'utiliser le lien . Chaque anecdote est validée via le bouton "Valider" et
+                    l'utilisateur peut ensuite passer à l'anecdote suivante. Les couleurs indiquent visuellement le résultat des
+                    réponses : 🟩 vert = bonne, 🟥 rouge = mauvaise, 🟨 orange = bonne mais non trouvée, ⚪ gris = inactif.
                 </p>
-                <p class="p4">Les flux de données sont résumés dans l'image ci-dessous :</p>
-                <img class="materialboxed" src="../image/GamsProgr.png" alt="schéma explicatif du programme"
-                    width="650">
-
-                <p>L'outil a donné lieu à la publication d'un article scientifique disponible
-                    <a
-                        href="https://www.researchgate.net/publication/282864553_Optimisation_economique_et_environnementale_de_l'atelier_d'engraissement_de_porcs_une_approche_par_modelisation">ici</a>.
+                <p class="p4">
+                    L'interactivité du chat est gérée via TMI.js. qui affiche les réponses uniquement lorsque la réponse est validée. 
                 </p>
+
+                <div class="row">
+                    <div class="col l6 s6 m6">
+                        <p class="p4">Exemple d'écran du jeu apres choix des réponses:</p>
+                        <img class="materialboxed" id="écran_jeu" src="../image/Qui_modo_2.png" alt="écran de jeu"
+                            width="350">
+                    </div>
+                    <div class="col l6 s6 m6">
+                        <p class="p4">Ecran affichant les votes du chat et solutions après validation :</p>
+                        <img class="materialboxed" id="écran_jeu" src="../image/Qui_modo_3.png" width="350">
+                    </div>
+                </div>
+
                 <a name="3"></a>
                 <h4 class="p6">Travail effectué</h4>
                 <hr>
                 <p class="p4">
-                    Ce projet comportait plusieurs étapes :
-                    <br>- Intégration des concepts et apprentissage du langage GAMS.
-                    <br>- Développement de l'ensemble des fonctionnalités 
-                    <br>- Réalisation de tests et de plusieurs scénarios
-                    <br>- Rédaction d'un article scientifique + rapport de stage.
+                    Le développement comprenait :
+                    <br>- Recupéation des anecdotes auprès de chaque modérateur (réunion,suivi...)
+                    <br>- Conception du front-end pour afficher anecdotes et avatars de manière claire
+                    <br>- Mise en place du système de feedback visuel et du calcul de score
+                    <br>- Intégration de TMI.js pour récupérer les votes du chat Twitch
                 </p>
             </div>
             <!-- carte à droite -->
             <div class="col l3 s6 m3">
                 <div class="card pannel #fafafa grey lighten-5" id="card">
                     <div class="card-content indigo lighten-5 center-align">
-                        <h5 class="p5">Aliment porc écologique </h5>
+                        <h5 class="p5">Qui a raconté cela ?</h5>
                     </div>
                     <div class="evolv">
-                        <img src="../image/GAMS_Image.png" class="responsive-img">
+                        <img src="../image/Qui_modo_1.png" alt="Qui a dit ça ?" class="responsive-img">
                     </div>
                     <div class="card purple indigo lighten-5">
                         <h5 class="p8 center-align">Type de projet</h5>
                     </div>
-                    <h6 class="p2 center-align">Développeur/Modélisation</h6>
+                    <h6 class="p2 center-align">Développement front-end</h6>
 
                     <div class="card purple indigo lighten-5">
                         <h5 class="p8 center-align">Soft Skills</h5>
                     </div>
-                    <h6 class="p2 center-align">Pensée analytique et systémique<br><br>Autonomie<br><br>Communication
-                    </h6>
+                    <h6 class="p2 center-align">Curiosité<br><br>Organisation<br><br>Créativité</h6>
                     <div class="card purple indigo lighten-5">
                         <h5 class="p8 center-align">REPO</h5>
                     </div>
                     <div class="p2 center-align">
-                        <a href="https://github.com/Swolfgoth/Projet-Aliment-Ecologique">Github aliment écologique</a>
+                        <a href="https://github.com/Swolfgoth/Jeu-Stream-Qui-Modo-Nuna">Github Qui a raconté cela ?</a><br>
+                        <a href="https://swolfgoth.github.io/Jeu-Stream-Qui-Modo-Nuna/">site jeu Lui-Elle</a>
                     </div>
-                    <br>
                 </div>
             </div>
-        </div>
     </section>
-
-    <!--initialisation de JS pour l'aggrandissement photo Gams   -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../navigation.js"></script>
@@ -212,9 +206,11 @@
                 <summary>
                     Written by <a href="mailto:thomas.plantevin@epitech.eu">Thomas Plantevin</a>.<br>
                 </summary>
-                <p>ce site a été développé sans café mais avec bcp de coca</p>
+                <p>Ce site a été développé sans café mais avec beaucoup de coca.</p>
             </details>
         </address>
-        <p>dernière modification le 16/10/2025</p>
+        <p>dernière modification le 01/11/2025</p>
     </footer>
 </body>
+
+</html>
